@@ -1,1 +1,1 @@
-- Inlining images and fonts
+- Встраивание изображений и шрифтов
