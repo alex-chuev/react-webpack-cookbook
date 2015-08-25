@@ -2,9 +2,9 @@
 
 > In case you want to contribute, please create a PR against [the main repo](https://github.com/christianalfoni/react-webpack-cookbook) or contact us through [the issue tracker](https://github.com/christianalfoni/react-webpack-cookbook/issues).
 
-The purpose of this cookbook is to guide you into the world of React and Webpack. Both are powerful technologies and when used together, frontend development becomes a joy.
+Целью этого документа является введение вас в мир ReactJS и Webpack. Оба они являются мощными технологиями и когда они используются вместе, front-end разработка начинает приносить удовольствие.
 
-The cookbook should have something to offer for all skill levels. If you are interested in just React, skip the Webpack part and vice versa. A more tutorial oriented approach is available in the form of [SurviveJS - Webpack and React](https://github.com/survivejs/webpack_react) book.
+Книга рецептов должна быть полезной разработчику с любым уровнем квалификации. Если вас интересует только ReactJS, пропускайте часть с Webpack и наоборот. A more tutorial oriented approach is available in the form of [SurviveJS - Webpack and React](https://github.com/survivejs/webpack_react) book.
 
 ## React
 
