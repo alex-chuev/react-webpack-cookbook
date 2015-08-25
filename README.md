@@ -13,4 +13,4 @@
 3. Внести изменения (смотри `/content`).
 4. Создать PR.
 
-Также можно [создать issue](https://github.com/christianalfoni/react-webpack-cookbook/issues/new).
+Также можно [создать issue](https://github.com/alex-chuev/react-webpack-cookbook/issues/new).
