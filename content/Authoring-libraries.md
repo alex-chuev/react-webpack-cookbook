@@ -1,8 +1,8 @@
-Webpack can be handy for packaging your library for general consumption. You can use it to output UMD, a format that's compatible with various module loaders (CommonJS, AMD) and globals.
+Webpack может быть удобным для упаковки вашей библиотеки под всеобщее пользование. Вы можете применять его для формирования UMD - формата, который совместим с различными загрузчиками модулей (CommonJS, AMD, global).
 
-## How can I output UMD for my library?
+## Как сформировать UMD для моей библиотеки?
 
-Especially if you are creating a library, it can be useful to output an UMD version of your library. This can be achieved using the following snippet:
+Это можно сделать, используя следующий фрагмент:
 
 ```javascript
 output: {
@@ -13,7 +13,7 @@ output: {
 },
 ```
 
-In order to avoid bundling big dependencies like React, you'll want to use a configuration like this in addition:
+Для того, чтобы избежать подключения больших зависимостей, как ReactJS, вы можете использовать дополнительную конфигурацию, наподобие этой:
 
 ```javascript
 externals: {
@@ -21,10 +21,9 @@ externals: {
     'react/addons': 'react'
 },
 ```
+## Как сформировать сжатую версию библиотеки?
 
-## How can I output a minified version of my library?
-
-Here's the basic idea:
+Вот основная идея:
 
 ```javascript
 output: {
