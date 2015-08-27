@@ -1,4 +1,4 @@
-When **webpack-dev-server** is running it will watch your files for changes. When that happens it rebundles your project and notifies browsers listening to refresh. To trigger this behavior you need to change your *index.html* file in the `build/` folder.
+Когда **webpack-dev-server** запущен, он будет отслеживать изменения ваших файлов, при которых он будет переупаковывать ваш проект и уведомляет браузер, который ожидает это уведомление для того, чтобы обновить страницу. Для запуска этого поведения вам необходимо изменить ваш *index.html* файл в папке `build/`.
 
 *build/index.html*
 
@@ -15,7 +15,7 @@ When **webpack-dev-server** is running it will watch your files for changes. Whe
 </html>
 ```
 
-We added a script that refreshes the application when a change occurs. You will also need to add an entry point to your configuration:
+Мы добавили скрипт, который обновляет приложение при возникновении изменений. Вы также должны добавить точку входа в конфигурацию: 
 
 *webpack.config.js*
 
@@ -30,8 +30,8 @@ module.exports = {
     },
 };
 ```
+Вот и все! Теперь ваше приложение будет автоматически обновляться при изменении файлов.
 
-Thats it! Now your application will automatically refresh on file changes.
+## Процесс переупаковки в строке состояния
 
-## Default environment
-In the example above we created our own *index.html* file to give more freedom and control. It is also possible to run the application from **http://localhost:8080/webpack-dev-server/bundle**. This will fire up a default *index.html* file that you do not control. It also fires this file up in an iFrame allowing for a status bar to indicate the status of the rebundling process.
+В приведенном выше примере мы создали файл *index.html*, чтобы дать больше свободы и контроля. Также можно запустить приложение из **http://localhost:8080/webpack-dev-server/bundle**. Это по-умолчанию откроет *index.html* файл в iframe, что позволит в строке состояния отслеживать процесс переупаковки.
