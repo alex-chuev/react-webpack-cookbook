@@ -1,21 +1,19 @@
-> [zh-cn](https://fakefish.github.io/react-webpack-cookbook/)
-
-> In case you want to contribute, please create a PR against [the main repo](https://github.com/christianalfoni/react-webpack-cookbook) or contact us through [the issue tracker](https://github.com/christianalfoni/react-webpack-cookbook/issues).
+> В случае, если вы хотите внести свой вклад, пожалуйста, создайте PR или свяжитесь с нами через issues.
 
 Целью этого документа является введение вас в мир ReactJS и Webpack. Оба они являются мощными технологиями и когда они используются вместе, front-end разработка начинает приносить удовольствие.
 
-Книга рецептов должна быть полезной разработчику с любым уровнем квалификации. Если вас интересует только ReactJS, пропускайте часть с Webpack и наоборот. A more tutorial oriented approach is available in the form of [SurviveJS - Webpack and React](https://github.com/survivejs/webpack_react) book.
+Книга рецептов должна быть полезной разработчику с любым уровнем квалификации. Если вас интересует только ReactJS, пропускайте часть с Webpack и наоборот.
 
-## React
+## ReactJS
 
-React is a library that greatly simplifies component development. Once you understand its basics, you can build your own stack around it. This is in contrast to frameworks, such as Angular, that try to offer everything and a kitchen sink.
+ReactJS - библиотека, которая значительно упрощает разработку компонентов. После того, как вы поймёте его основы, вы сможете создать свой собственный стек вокруг него. Он сильно отличается от фреймворков, таких как AngularJS, которые содержат в себе всё, что только можно.
 
-[The official tutorial](http://facebook.github.io/react/docs/tutorial.html) is a good starting point if you just want a quick look at the technology.
+[Официальное руководство](http://facebook.github.io/react/docs/tutorial.html) является хорошей начальной точкой, если вы желаете просто познакомиться с технологией.
 
-Perhaps the most intriguing thing about React is that it keeps on challenging traditional web development. It allows us to rethink concepts such as separation of concern. It will also influence on mobile development in the form of [React Native](http://facebook.github.io/react-native). React Native allow native level performance while making it possible to develop apps in a tight realtime preview loop using JavaScript.
+Возможно, самым интригующим в ReactJS является то, что он делает вызов традиционной веб-разработке. Он позволяет нам переосмыслить такие понятия, как разделение ответственности. Он также повлияет на разработку мобильных приложений благодаря [React Native](http://facebook.github.io/react-native).
 
 ## Webpack
 
-Webpack operates on a lower level. It is a module bundler. In essence it is something that you use to build your project into deliverable components (HTML, CSS, JS). The nice thing about Webpack is that once you initially configure it, it deals with the nasty details for you. This allows you to mix various technologies within your project without a headache.
+Webpack работает на более низком уровне. Это упаковщик модулей. По сути, это то, что вы используете для сборки своего проекта в виде конечных компонентов (HTML, CSS, JS). Webpack хорош тем, что как только вы его настроете, он будет делать всю неприятную рутинную работу за вас. Это позволяет смешивать различные технологии в пределах вашего проекта без головной боли.
 
-If you are completely new to Webpack and want to go through a good introduction, check out [Pete Hunt's guide](https://github.com/petehunt/webpack-howto). You'll find the basics there. This guide merely complements his.
+Если вы не знакомы с Webpack, прочтите [руководство Пита Ханта](https://github.com/petehunt/webpack-howto). Там вы найдете его основы. Это руководство лишь дополняет его.
