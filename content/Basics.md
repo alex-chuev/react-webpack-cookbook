@@ -1,6 +1,6 @@
-## Why use Webpack?
-- Minimal configuration for the common workflow
-- Analyzes your project code as chunks that can be rearranged to optimize user experience
-- Especially useful with React JS
-- Powerful features like automatically inlining images and fonts
-- ES6 support right out of the box
+## Зачем использовать Webpack?
+- Минимальная конфигурация для типичного рабочего процесса
+- Webpack анализирует код проекта, как куски, которые могут быть перестроены
+- Особенно полезен с ReactJS
+- Мощные функции, такие как автоматическое встраивание изображений и шрифтов
+- Поддержка ES6 прямо из коробки
