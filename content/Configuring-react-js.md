@@ -1,10 +1,10 @@
-## Installing React JS
+## Установка ReactJS
 
 `npm install react --save`
 
-There is really nothing more to it. You can now start using React JS in your code.
+И больше ничего. Теперь вы можете начать использовать ReactJS в вашем коде.
 
-## Using React JS in the code
+## Использование ReactJS в коде
 
 **component.jsx**
 
@@ -48,13 +48,13 @@ function main() {
 </html>
 ```
 
-## Converting JSX
+## Преобразование JSX
 
-To use the JSX syntax you will need webpack to transform your JavaScript. This is the job of a loader. We'll use [Babel](https://babeljs.io/) as it's nice and has plenty of features.
+Чтобы использовать синтаксис JSX, вам потребуется Webpack для преобразования его в JavaScript. Это работа для loader-а. Мы будем использовать [Babel](https://babeljs.io/), так как он приятный и имеет множество функций.
 
 `npm install babel-loader --save-dev`
 
-Now we have to configure webpack to use this loader.
+Теперь нам нужно настроить Webpack для использования этого loader-а.
 
 *webpack.config.js*
 ```javascript
@@ -67,8 +67,8 @@ var config = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/, // A regexp to test the require path. accepts either js or jsx
-      loader: 'babel' // The module to load. "babel" is short for "babel-loader"
+      test: /\.jsx?$/, // Регулярное выражение для проверки требуемого пути. Соответствует js или jsx.
+      loader: 'babel' // Модуль, который должен быть загружен. "babel" - сокращение для "babel-loader".
     }]
   }
 };
@@ -76,6 +76,6 @@ var config = {
 module.exports = config;
 ```
 
-Webpack will test each path required in your code. In this project we are using ES6 module loader syntax, which means that the require path of `import MyComponent from './Component.jsx';` is `'./Component.jsx'`.
+Webpack будет тестировать каждый путь запрашиваемый в вашем коде. В этом проекте мы используем синтаксис ES6 для загрузки модулей. Это означает, что для `import MyComponent from './Component.jsx';` запрашиваемый путь будет  `'./Component.jsx'`.
 
-Run `npm run dev` in the console and refresh the page to see something.
+Запустите `npm run dev` в консоли и обновите страницу для того, чтобы что-то увидеть.
