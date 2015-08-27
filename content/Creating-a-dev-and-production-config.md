@@ -1,1 +1,1 @@
-- Split configuration into two files
+- Разделение конфигурации на два файла
