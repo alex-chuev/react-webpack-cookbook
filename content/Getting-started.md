@@ -1,29 +1,29 @@
-> Before getting started you should make sure you have a recent version of Node.js and NPM installed. See [nodejs.org](http://nodejs.org/) for installation details. We'll use NPM to set up various tools.
+> Прежде чем начать, вам необходимо убедиться, что у вас установлены последние версии Node.js и NPM. Посетите [nodejs.org](http://nodejs.org/) для получения подробностей по установке. Мы будем использовать NPM для установки различных инструментов.
 
-Getting started with Webpack is straightforward. I'll show you how to set up a simple project based on it. As a first step, set a directory for your project and hit `npm init` and fill in some answers. That will create a `package.json` for you. Don't worry if some fields don't look ok, you can modify those later.
+Начать работать с Webpack – просто. Я покажу вам, как настроить простой проект на его основе. Первый шаг – выбрать директорию для вашего проекта, выполнить `npm init` и ответить на некоторые вопросы. Это создаст файл `package.json` для вас. Не переживайте, если некоторые поля не выглядят хорошо, вы можете изменить их позже.
 
-## Installing Webpack
+## Установка Webpack
 
-Next you should get Webpack installed. We'll do a local install and save it as a project dependency. This way you can invoke the build anywhere (build server, whatnot). Run `npm i webpack --save-dev`. If you want to run the tool, hit `node_modules/.bin/webpack`.
+Далее вам необходимо установить Webpack. Мы будет устанавливать его локально и сохраним его в качестве засимости проекта. Таким образом, вы сможете запустить сборку где угодно. Выполните `npm i webpack --save-dev`. Если вы желаете запустить инструмент, выполните `node_modules/.bin/webpack`.
 
-## Directory Structure
+## Структура директорий
 
-Structure your project like this:
+Организуйте структуру вашего проекта таким образом:
 
 - /app
   - main.js
   - component.js
 - /build
-  - bundle.js (automatically created)
+  - bundle.js (создан автоматически)
   - index.html
 - package.json
 - webpack.config.js
 
-In this case we'll create `bundle.js` using Webpack based on our `/app`. To make this possible, let's set up `webpack.config.js`.
+В этом случае `bundle.js` будет создан с помощью Webpack, основываясь на `/app`. Для того, чтобы сделать это возможным, давайте создадим `webpack.config.js`.
 
-## Creating Webpack Configuration
+## Создание конфигурации Webpack
 
-In our case a basic configuration could look like this:
+В нашем случае, базовая конфигурация могла бы выглядеть так:
 
 *webpack.config.js*
 
@@ -40,9 +40,9 @@ module.exports = {
 };
 ```
 
-## Running Your First Build
+## Запуск вашей первой сборки
 
-Now that we have basic configuration in place, we'll need something to build. Let's start with a classic `Hello World` type of app. Set up `/app` like this:
+Сейчас, имея базовую конфигурацию, нам нужно что-то, что будем собирать. Давайте начнём с классического `Hello World` приложения. Организуйте `/app` таким образом:
 
 *app/component.js*
 
@@ -70,7 +70,7 @@ document.body.appendChild(component());
 
 ```
 
-Now run `webpack` in your terminal and your application will be built. A *bundle.js* file will appear in your `/build` folder. Your *index.html* file in the `build/` folder will need to load up the application.
+Сейчас запустите `webpack` в терминале и ваше приложение будет собрано. В папке `/build` появится файл *bundle.js*. В папке `build/` понадобится файл *index.html* для запуска приложения.
 
 *build/index.html*
 
@@ -86,7 +86,7 @@ Now run `webpack` in your terminal and your application will be built. A *bundle
 </html>
 ```
 
-> It would be possible to generate this file with Webpack using [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin). You can give it a go if you are feeling adventurous. It is mostly a matter of configuration. Generally this is the way you work with Webpack.
+> Этот файл можно было бы создать с помощью Webpack, используя [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin). You can give it a go if you are feeling adventurous. It is mostly a matter of configuration. Generally this is the way you work with Webpack.
 
 ## Running the Application
 
