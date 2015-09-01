@@ -1,7 +1,7 @@
-When running your workflow from **http://localhost:8080/web-dev-server/bundle** you do not control the *index.html* file where the scripts are loaded.
+При запуске рабочего процесса из **http://localhost:8080/web-dev-server/bundle** вы не контролируете *index.html* файл, в котором загружен скрипт.
 
-## Running your own index.html file
-In your *package.json* you have your *dev* script. `"webpack-dev-server --devtool eval --progress --colors --content-base build/"`. The *--content-base build/* parameter tells webpack-dev-server where to load your application from. In this example that would be `build/`.
+## Запуск собственного файла index.html
+В вашем *package.json* у вас есть свой *dev* скрипт. `"webpack-dev-server --devtool eval --progress --colors --content-base build/"`. Параметр *--content-base build/* сообщает webpack-dev-server-у, откуда загружать ваше приложение. В этом примере это будет `build/`.
 
-## Create the index.html file
-In the `build/` folder create a new *index.html* with this content.
+## Создание файла index.html
+В папке `build/` создайте новый *index.html* с этим содержимым.
