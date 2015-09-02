@@ -1,6 +1,6 @@
-## Classes
+## Классы
 
-As of React JS 0.13 you will be able to define components as classes.
+Начиная с ReactJS версии 0.13 вы можете определять компоненты, как классы.
 
 ```javascript
 class MyComponent extends React.Component {
@@ -15,7 +15,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-This gives you a very short and nice syntax for defining components. A drawback with using classes though is the lack of mixins. That said, you are not totally lost. Lets us see how we could still use the important **PureRenderMixin**.
+Это даёт вам возможность пользоваться очень кратким и красивым синтаксисом для написания компонентов. Недостаток использования классов заключается в отсутствии возможности использовать миксины. Тем не менее, есть выход. Давате посмотрим, как мы могли бы продолжить использование важного **PureRenderMixin**.
 
 ```javascript
 import React from 'react/addons';
