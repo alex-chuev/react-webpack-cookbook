@@ -1,10 +1,13 @@
-Lets have a look at the simplest setup you can create for your application. Use a single bundle when:
+Используйте единый бандл, когда:
 
-- You have a small application
-- You will rarely update the application
-- You are not too concerned about perceived initial loading time
+- у вас небольшое приложение,
+- вы будете редко обновлять его,
+- вам не критично время первоначальной загрузки.
+
+Давайте посмотрим на простейшие настройки, с помощью которых вы сможете собрать своё приложение. 
 
 *webpack.production.config.js*
+
 ```javascript
 var path = require('path');
 var config = {
