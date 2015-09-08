@@ -1,7 +1,8 @@
-So this part is just freakin' awesome. With React JS and the react-hot-loader you can change the class code of your component and see the instances update live in the DOM, without losing their state! This is pretty much exactly how CSS updates behave, only that it is your components.
+С React JS и react-hot-loader вы можете изменить код класса вашего компонента и увидеть, что DOM его экземпляров изменился без потери их состояния. Это практически то же самое, как обновление CSS, только в отношении ваших компонентов.
 
-## Setting it up
-This setup requires that you use the **webpack-dev-server** as introduced in earlier chapters. Now we just have to install the loader with `npm install react-hot-loader --save-dev`, do a small config change:
+## Настроем это
+
+Этот шаг требует использование **webpack-dev-server**, который был представлен в предыдущих главах. Сейчас нам просто нужно установить загрузчик `npm install react-hot-loader --save-dev` и сделать небольшие изменения конфигурации:
 
 ```javascript
 var webpack = require('webpack');
@@ -17,8 +18,8 @@ var config = {
     loaders: [{
       test: /\.js$/,
 
-      // Use the property "loaders" instead of "loader" and 
-      // add "react-hot" in front of your existing "jsx" loader
+      // Используем свойство "loaders" вместо "loader" и 
+      // добавляем "react-hot" перед вашим существующим "jsx" загрузчиком
       loaders: ['react-hot', 'babel']
     }]
   }
@@ -27,23 +28,22 @@ var config = {
 module.exports = config;
 ```
 
-And you will also need a small snippet of code in your main entry file. In the example above that would be the *main.js* file located in the `app/` folder.
+Также потребуется небольшой фрагмент кода во входном файле вашего приложения. В примере выше был файл *main.js*, размещенный в папке `app/`.
 
 *app/main.js*
 ```javascript
-// You probably already bring in your main root component, 
-// maybe it is your component using react-router
+// Основной компонент вашего приложения,
+// возможно он использует react-router
 var RootComponent = require('./RootComponent.jsx');
 
-// When you render it, assign it to a variable
+// Сохраняем компонент в переменную
 var rootInstance = React.render(RootComponent(), document.body);
 
-// Then just copy and paste this part at the bottom of
-// the file
+// И просто скопируйте и вставьте эту часть в конец файла
 if (module.hot) {
   require('react-hot-loader/Injection').RootInstanceProvider.injectProvider({
     getRootInstances: function () {
-      // Help React Hot Loader figure out the root component instances on the page:
+      // Поможем React Hot Loader определить основной компонент на странице:
       return [rootInstance];
     }
   });
@@ -51,6 +51,6 @@ if (module.hot) {
 
 ```
 
-It is that simple. Render a component to the DOM and make a code change on the component's class. It will render itself again, keeping the existing state. Cool?
+Это так просто! Отрендерите компонент в DOM и измените код класса компонента. Он обновится, сохранив существующее состояние. Круто?
 
-Read more about the [react-hot-loader](http://gaearon.github.io/react-hot-loader/getstarted/).
+Подробнее о [react-hot-loader](http://gaearon.github.io/react-hot-loader/getstarted/).
